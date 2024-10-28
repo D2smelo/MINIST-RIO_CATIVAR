@@ -1,0 +1,96 @@
+/* Responsivo.css */
+
+/* Define configurações gerais para telas menores */
+@media (max-width: 768px) {
+
+    /* Ajusta o container principal */
+    main {
+        width: 90%;
+        height: auto; /* Ajusta a altura para conteúdo dinâmico */
+        padding: 10px;
+    }
+
+    /* Ajusta o cartão para telas menores */
+    .cartao {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    /* Ajusta a imagem do cartão */
+    .cartao-imagem img {
+        max-height: 120px;
+    }
+
+    /* Estiliza os títulos e parágrafos para tamanhos menores */
+    h2 {
+        font-size: 1.5em;
+        margin: 10px;
+    }
+
+    h3, h4 {
+        font-size: 1.2em;
+        margin: 5px;
+    }
+
+    p {
+        font-size: 0.9em;
+        margin: 5px 0;
+    }
+
+    /* Ajusta os inputs para largura total */
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    input[type="igreja"] {
+        width: 100%;
+        padding: 8px;
+    }
+
+    /* Ajusta os botões para ocuparem toda a largura */
+    .botoes button {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    /* Redimensiona o botão 4 */
+    .botao4 .botao-logo {
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    /* Modifica o hover dos botões para telas menores */
+    .botoes button:hover {
+        transform: none;
+    }
+}
+
+/* Configuração adicional para telas ainda menores */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3, h4 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .botoes {
+        max-width: 100%;
+    }
+
+    button {
+        font-size: 13px;
+    }
+
+    /* Ajusta espaçamento dos botões */
+    .botoes button {
+        margin: 10px 0;
+    }
+}
