@@ -1,7 +1,4 @@
-/* Responsivo.css */
-
-/* Define configurações gerais para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 768px) {      /* Define configurações gerais para telas menores */
 
     /* Ajusta o container principal */
     main {
