@@ -3,8 +3,10 @@
 /* Ajustes gerais para telas pequenas */
 @media (max-width: 600px) {
     body {
-        font-size: 0.9em; /* Reduz o tamanho geral da fonte */
-        padding: 10px; /* Ajusta o espaçamento */
+        font-size: 0.9em;
+        /* Reduz o tamanho geral da fonte */
+        padding: 40px;
+        /* Ajusta o espaçamento */
     }
 
     main {
@@ -16,28 +18,42 @@
         align-items: center;
         padding: 10px;
     }
-
+    .cartao-imagem img {
+        width: 100%;
+        max-height: 5px; /* Limita a altura do logo */
+        object-fit: contain; /* Garante que a imagem não distorça */
+        margin-bottom: 1px; /* Margem inferior para espaçamento */
+    }
+    .cartao-imagem img {
+        max-height: 180px; /* Ajusta a altura da imagem */
+    }
     .cartao {
-        width: 100%; /* Garante que os cartões ocupem toda a largura */
-        margin: 10px 0; /* Espaço entre cartões */
-        padding: 10px;
+        width: 120%; /* Garante que os cartões ocupem toda a largura */
+        margin: 12px 0; /* Espaço entre cartões */
+        padding: 12px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .cartao-imagem img {
-        max-height: 110px; /* Ajusta a altura da imagem */
+    .cartao-visitante h3 {
+        padding: 0px;
+        max-width: 400px;
+        /* Limita a largura máxima do cartão */
+        width: 20%;
+        /* Faz com que o cartão se ajuste ao tamanho da tela, mas não ultrapasse a largura máxima */
+        box-sizing: border-box;
+        list-style: none;
+    
     }
 
-    .cartao-visitante h3, .cartao-visitante h2 {
+    h3 {
         text-align: center; /* Centraliza o texto */
         font-size: 1em;
-        margin: 0px 10;
+        margin-left: 50px;
     }
 
-    .informacao h4, .informacao p {
-        font-size: 0.7em; /* Ajusta o tamanho da fonte */
+    h4 {
+        font-size: 0.9em;/* Ajusta o tamanho da fonte */
         line-height: 1; /* Ajusta o espaçamento entre linhas */
     }
 
@@ -49,8 +65,11 @@
         align-items: center;
         margin-top: 20px;
     }
-    .botoes123, .botao4 {
-        order: 1; /* Coloca os botões após o conteúdo dos cartões */
+
+    .botoes123,
+    .botao4 {
+        order: 1;
+        /* Coloca os botões após o conteúdo dos cartões */
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -58,8 +77,10 @@
     }
 
 
-    .botoes123 button, .botao4 button {
-        width: 90%; /* O botão ocupa quase toda a largura, mas mantém margens */
+    .botoes123 button,
+    .botao4 button {
+        width: 90%;
+        /* O botão ocupa quase toda a largura, mas mantém margens */
         padding: 10px;
         font-size: 1em;
         margin-bottom: 10px;
@@ -76,15 +97,18 @@
         font-size: 0.8em;
     }
 
-    .botoes123 button, .botao4 button {
-        font-size: 0.6em; /* Reduz o tamanho da fonte */
+    .botoes123 button,
+    .botao4 button {
+        font-size: 0.6em;
+        /* Reduz o tamanho da fonte */
     }
 
     .cartao-imagem img {
         max-height: 100px;
     }
 
-    .informacao h4, .informacao p {
+    .informacao h4,
+    .informacao p {
         font-size: 0.6em;
     }
 }
